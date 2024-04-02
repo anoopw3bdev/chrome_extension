@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "Auto skip",
+    "version": "1.0",
+    "description": "Watch youtube videos without bothering about clicking the skip ad button",
+    "permissions": [
+      "activeTab"
+    ],
+    
+    "icons": {
+      "16": "logo/icon16.png",
+      "48": "logo/icon48.png",
+      "128": "logo/icon128.png"
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://www.youtube.com/*"],
+        "js": ["content.js"]
+      }
+    ]
+}
